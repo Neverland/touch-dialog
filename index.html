@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>touch-dialog</title>
+</head>
+<style>
+	body, header, footer, section, h1, h2, h3, div, form, table, tr, td, ul, li, p, a, input, dl, dt, dd {
+		margin: 0;
+		padding: 0;
+		font-family: "\5FAE\8F6F\96C5\9ED1",Helvetica;
+	}
+</style>
+<link rel="stylesheet" href="./style/dialog.css"/>
+<script src="./script/dialog.js"></script>
+<body>
+
+<script>
+
+	!function (window, doc, undefined) {
+
+		new Dialog({
+			title: 'title',
+			box: '<p> Hello world!</p>',
+			btn: 'close',
+			onenter: function () {
+				this.hide();
+			}
+		}, function () {})
+
+
+	}(this, document)
+</script>
+
+
+</body>
+</html>
