@@ -1,78 +1,83 @@
-#dialog-dialog {
+/**
+ *@license
+ * enix@foxmail.com
+ * Created on 14-5-26.
+ */
+.dialog {
 	position: absolute;
 	width: 300px;
 	z-index: 101;
 	overflow: hidden;
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(#c10009), to(#930705), color-stop(0.50, #6a0e01));
+	background: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#000));
 	text-align: center;
-	z-index: 4000;
-	border: solid 2px #bf0009;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
-#dialog-box h4 {
+.dialog-box h4 {
 	margin: 0;
 	color: white;
 }
 
-#dialog-box h3 {
+.dialog-box h3 {
 	color: #ddae01;
 }
 
-#dialog-box form input {
+.dialog-box form input {
 	height: 30px;
 	line-height: 30px;
-	border: none;
-	width: 100%;
+	width: 95%;
 	border: solid 1px #bf0009;
+	display: inline-block;
+	margin: 0 auto;
 }
 
-#dialog-title {
-	padding-left: 10px;
-	height: 40px;
+.dialog-title {
+	height: 30px;
 	line-height: 40px;
-	color: #fe7000;
-	text-align: center;
+	color: rgb(254, 112, 0);
+	text-align: left;
+	margin: 0 20px;
+	border-bottom: 1px solid rgb(0, 0, 0);
 }
 
-#dialog-box {
+.dialog-box {
 	padding: 10px;
 	color: #fff;
 }
 
-#dialog-title span {
+.dialog-title span {
 	color: #ddae01;
 }
 
-#dialog-box h4 span {
+.dialog-box h4 span {
 	color: #fe7000;
 }
 
-#dialog-box li {
+.dialog-box li {
 	color: #fff;
 	text-align: left;
 	font-size: 14px;
 }
 
-#dialog-box li span {
+.dialog-box li span {
 	display: inline-block;
 	width: 70px;
 	line-height: 25px;
 }
 
-#dialog-box p {
+.dialog-box p {
 	text-align: center;
-	line-height: 40px;
+	line-height: 20px;
 	color: white;
 }
 
-#dialog-footer {
+.dialog-footer {
 	margin: 15px 0;
 	text-align: center;
 	width: 100%;
 }
 
-#dialog-Btn {
+.dialog-Btn {
 	padding: 0 10px;
 	border: none;
 	background: #ddae01;
@@ -84,7 +89,7 @@
 	box-shadow: 2px 2px 5px #444;
 }
 
-#dialog-overlay {
-	z-index: 3000;
+.dialog-overlay {
+	z-index: 100;
 	background: rgba(0, 0, 0, .5);
 }
